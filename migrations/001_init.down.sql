@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS url_clicks;
+DROP TABLE IF EXISTS urls;

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: url-shortener-app
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - postgres_default
+
+networks:
+  postgres_default:
+    external: true
