@@ -10,27 +10,6 @@ This project is a backend service that transforms long URLs into short, shareabl
 
 ---
 
-## 🧠 Architecture Diagram
-
-```mermaid
-flowchart LR
-    Client -->|HTTP Request| App[URL Shortener API (Golang)]
-    
-    App -->|Read/Write| DB[(PostgreSQL)]
-    App -->|Track Click| Analytics[(url_clicks table)]
-    
-    Admin -->|Access| PgAdmin[pgAdmin UI]
-    PgAdmin --> DB
-
-    subgraph Docker Network
-        App
-        DB
-        PgAdmin
-    end
-```
-
----
-
 ## ✨ Features
 
 ### 🔗 Core Features
@@ -257,4 +236,4 @@ MIT License
 
 ## 👨‍💻 Author
 
-Built for backend engineering portfolio using Golang 🚀
+Alfarizi 🚀
